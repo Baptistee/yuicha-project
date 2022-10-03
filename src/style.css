@@ -1,0 +1,36 @@
+body {
+    overflow: auto;
+}
+
+#info {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    position: absolute;
+    font-family: monospace;
+    font-size: 2vw;
+    text-align: center;
+    z-index: 100;
+    display: none;
+}
+
+.timeline {
+    position: sticky;
+    bottom: 50px;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.print {
+    position: sticky;
+}
+
+.point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

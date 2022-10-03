@@ -1,0 +1,88 @@
+.timeline {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /*outline: solid red 1px;*/
+}
+
+.timeline .button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    padding: 5px;
+    position: relative;
+    z-index: 30;
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    border:solid 2px black;   
+}
+
+.timeline .js-stepButton {
+    flex: 0 0 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+    background: palegoldenrod;
+    transition: all .2s ease-in-out;
+    /*outline: solid blue 1px;*/
+    z-index: 20;
+}
+
+.timeline .js-stepButton:hover, .timeline .js-stepButton:focus {
+    outline: none;
+    background: yellow;
+    cursor: pointer;
+}
+
+.timeline .js-stepButton.js-active {
+    background: orange;
+    cursor: auto;
+}
+
+.timeline .timeline-line {
+    height: 2px;
+    background-color: black;
+    flex: 1;
+    max-width: 400px;
+}
+
+
+
+/*
+.timeline .button-container::after,
+.timeline .button-container::before
+{
+    content: '';
+    width: 30px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    background-color: transparent;
+    border-top:solid 2px black;
+    border-bottom:solid 2px black;
+}
+
+.timeline .button-container::before {
+    right: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-left:solid 2px black;
+}
+
+.timeline .button-container::after {
+    left: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-right:solid 2px black;
+}
+*/
